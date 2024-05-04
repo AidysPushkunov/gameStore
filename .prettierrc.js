@@ -1,7 +1,19 @@
 module.exports = {
-  semi: true,
-  trailingComma: "all",
-  singleQuote: true,
-  printWidth: 100,
-  tabWidth: 2,
-};
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "bracketSameLine": true,
+  "overrides": [
+      {
+          "files": ["*.json", "*.cjs"],
+          "options": {
+              "trailingComma:": "none",
+              "singleQuote": false,
+              "tabWidth": 2,
+              "quoteProps": "preserve"
+          }
+      }
+  ]
+}
