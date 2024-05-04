@@ -1,9 +1,19 @@
 import styles from './styles.module.css'
 
-const Button: React.FC = () => {
+type ButtonType = {
+    children: string;
+    icon: string;
+}
+
+const Button: React.FC<ButtonType> = ({icon, children}) => {
     return (
         <div className={styles.button}>
-            Button
+            <div className={styles.icon}>
+                <img className={styles.image} src={icon} />
+            </div>
+            <div className={styles.text}>
+                {children}
+            </div>
         </div>
     )
 }

@@ -1,0 +1,27 @@
+.burger {
+    cursor: pointer;
+}
+
+.top {
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    border-radius: 2px;
+}
+
+
+.middle {
+    width: 30px;
+    background-color: white;
+    margin: 7px 0;
+    height: 3px;
+    border-radius: 2px;
+
+}
+
+.bottom {
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    border-radius: 2px;
+}

@@ -1,0 +1,22 @@
+
+.layout__wrapper {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.layout_position_blocks {
+    display: flex;
+
+    gap: 50px;
+}
+
+.layout_position_content {
+    width: 100%;
+}
+
+
+@media(max-width: 750px) {
+    .layout_position_blocks {
+        gap: 0;
+    }
+}

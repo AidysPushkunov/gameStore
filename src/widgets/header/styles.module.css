@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-around;
+    width: 125px;
+    margin-right: 20px;
+}
+
+.avatar {
+    cursor: pointer;
+    width: 30px;
+}
+
+.image {
+    cursor: pointer;
+    width: 20px;
+}
+
+.search_element {
+    margin-left: 10px;
+}
+
+.burger {
+    display: none;
+    margin-left: 10px;
+}
+
+@media(max-width: 750px) {
+    .burger {
+        display: block;
+    }
+}

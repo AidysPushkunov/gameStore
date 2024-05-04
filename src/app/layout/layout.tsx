@@ -14,13 +14,16 @@ export const Layout = () => {
     return (
         <div className='layout layout__wrapper'>
             <SkeletonTheme>
-                <Header />
-                <Menu />
-
-                <main className='layout__content'>
-                    <Outlet />
-                </main>
-
+                <div className='layout_position_blocks'>
+                    <Menu />
+                    <div className='layout_position_content'>
+                        <Header />
+                    
+                        <main className='layout__content'>
+                            <Outlet />
+                        </main>
+                    </div>
+                </div>
                 {/* <Footer className='layout__footer' /> */}
 
                 <div

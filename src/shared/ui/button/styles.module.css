@@ -1,0 +1,30 @@
+
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 32px;
+    border-radius: 3px;
+    padding: 5px 100px 5px 30px;
+
+}
+
+.button:hover {
+    background-color: var(--dark-gray-color);
+}
+
+.text {
+    font-size: 12px;
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+    color: white;
+} 
+
+.image {
+    width: 20px;
+}

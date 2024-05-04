@@ -1,0 +1,33 @@
+.menu {
+    /* padding: 3px; */
+    /* margin: 0; */
+    background-color: hsl(0, 0%, 18%);
+    height: 100vh;
+}
+
+.logo {
+    width: 90px;
+    margin: 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0px 5px;
+    /* background-color: aqua; */
+}
+
+
+@media(max-width: 750px) {
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        z-index: 1000;
+        display: none;
+    }
+}
