@@ -1,5 +1,12 @@
 declare module '*.jpg'
 declare module '*.png'
 
-declare type RootState = ReturnType<typeof import('./store').store.getState>
-declare type AppDispatch = typeof import('./store').store.dispatch
+// Определение типа RootState
+// Определение типа RootState
+import { RootState } from './RootState';
+
+// Определение типа AppDispatch
+import { AppDispatch } from './AppDispatch';
+
+// Экспорт типов
+export { RootState, AppDispatch };

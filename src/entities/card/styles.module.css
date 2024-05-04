@@ -1,0 +1,86 @@
+.card { 
+    background-color: #323232;
+    width: 220px;
+    height: 260px;
+
+    display:inline-block;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in;  
+}
+
+
+.card:hover .image {
+    transform: scale(1.2);
+}
+
+
+.image_wrap {
+    position: relative;
+    width: 220px;
+    height: 150px;
+    overflow: hidden;
+
+}
+
+.image {
+    position: absolute;
+    top: -0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    align-items: baseline;
+}
+
+.category {
+    color: var(--gray-ico-color);
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+.price {    
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--purple-light-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+.add_to_cart {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}

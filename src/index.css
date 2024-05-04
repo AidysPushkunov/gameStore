@@ -19,6 +19,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overflow-y: hidden;
+}
+
+
 * {
   margin: 0;
   padding: 0;

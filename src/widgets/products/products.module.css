@@ -1,0 +1,29 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: 10px;
+
+    justify-content: center;
+    scrollbar-width: 100px;
+
+    height: 80vh;
+    overflow-y: auto;
+}
+
+
+.products::-webkit-scrollbar {
+    width: 12px;               /* ширина всей полосы прокрутки */
+  }
+  
+.products::-webkit-scrollbar-track {
+    background: var(--dark-gray-color);        /* цвет зоны отслеживания */
+  }
+  
+.products::-webkit-scrollbar-thumb {
+    background-color: var(--gray-ico-color);    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    border: 3px solid  var(--gray-ico-color);  /* отступ вокруг бегунка */
+  }
+  
+  
