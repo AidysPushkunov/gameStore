@@ -19,12 +19,10 @@ const Header: React.FC = () => {
             <div className={styles.burger}>
                 <Burger />
             </div>
-            {
-                location.pathname === '/' ? ( <div className={styles.search_element}>
-                    <SearchGames />
-                </div>) : (<div></div>)
-            }
-      
+            <div className={styles.search_element}>
+                <SearchGames />
+            </div>
+
             <div className={styles.elements}>
                 <img className={styles.image} src={notificationIco} alt='notification' />
                 <img className={styles.image} src={basketIco} alt='basket' />
