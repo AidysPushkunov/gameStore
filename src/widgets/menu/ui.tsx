@@ -6,8 +6,6 @@ import  profileIcon  from 'shared/assets/images/profile.svg'
 import  controllerIcon  from 'shared/assets/images/controller.svg'
 
 
-
-
 const Menu: React.FC = () => {
     return (
         <menu className={styles.menu}>

@@ -7,7 +7,7 @@ import { setSearchResults } from "./searchSlice/searchSlice";
 const SearchGames: React.FC = () => {
   const dispatch = useDispatch();
 
-  const [searchText, setSearchText] = useState('a');
+  const [searchText, setSearchText] = useState('Search');
   const [ , setGameList] = useState<any[]>([]);
   const [ , setLoading] = useState(true);
 
@@ -20,8 +20,7 @@ const SearchGames: React.FC = () => {
       try {
         const games: any = await getGames(searchText);
         if (games && games.length > 0) {
-          console.log('Games from features: ', games);
-          dispatch(setSearchResults(games)); // Dispatching setSearchResults action
+          dispatch(setSearchResults(games)); 
           setGameList(games);
           setLoading(false);
         } else {
