@@ -8,7 +8,6 @@ import {
 import { Layout } from 'app/layout';
 import { Fallback } from 'shared/ui/fallback';
 import styles from '../styles/App.module.css';
-import HomePage from 'pages/homepage';
 import Product from 'pages/product';
 import Profile from 'pages/profile';
 
@@ -20,16 +19,8 @@ export const AppRouter = () => {
             element={<Layout />}
             handle={{ crumb: <Link to='/'>Home</Link> }}
             errorElement={<Fallback />}>
-            <Route index element={<HomePage />} />
-
-            <Route
-                path='/products'
-                element={<Product />}
-                handle={{
-                    crumb: <Link to='/products'>Products</Link>,
-                }}
-            />
-
+            <Route index element={<Product />} />
+ 
             <Route
                 path='/profile'
                 element={<Profile />}

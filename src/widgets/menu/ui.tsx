@@ -4,7 +4,6 @@ import { Button } from 'shared/ui/button/ui'
 import logo from 'shared/assets/images/logo.svg';
 import  profileIcon  from 'shared/assets/images/profile.svg'
 import  controllerIcon  from 'shared/assets/images/controller.svg'
-import  homeIcon  from 'shared/assets/images/home.svg'
 
 
 
@@ -16,8 +15,7 @@ const Menu: React.FC = () => {
             <img className={styles.logo} src={logo} alt="logo" />
             
 
-            <Link className={styles.link} to={'/'}><Button icon={homeIcon}>Home</Button></Link>
-            <Link className={styles.link} to={'/products'}><Button icon={controllerIcon}>Games</Button></Link>
+            <Link className={styles.link} to={'/'}><Button icon={controllerIcon}>Games</Button></Link>
             <Link className={styles.link} to={'/profile'}><Button icon={profileIcon}>Profile</Button></Link>
 
         </menu>

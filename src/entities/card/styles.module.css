@@ -10,14 +10,13 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
-
     transition: all 0.2s ease-in;  
 }
 
-
-.card:hover .image {
-    transform: scale(1.2);
+.card:hover {
+    background-color: #434343;
 }
+
 
 
 .image_wrap {

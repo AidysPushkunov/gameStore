@@ -3,8 +3,8 @@ import styles from './styles.module.css';
 import notificationIco from 'shared/assets/images/notification.svg';
 import basketIco from 'shared/assets/images/basket.svg';
 import avatarIco from 'shared/assets/images/profile.svg';
-import { SearchElement } from 'entities/searchElement/ui';
 import { Burger } from 'entities/burger';
+import { SearchGames } from 'features/searchGame';
 
 
 const Header: React.FC = () => {
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                 <Burger />
             </div>
             <div className={styles.search_element}>
-                <SearchElement />
+                <SearchGames />
             </div>
 
             <div className={styles.elements}>

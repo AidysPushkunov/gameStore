@@ -1,0 +1,26 @@
+.user_info {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    justify-content:center;
+}
+
+.user_image {
+    width: 200px;
+    margin-right: 100px;
+}
+
+.orders {
+    margin: 20px 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background-color: var(--purple-dark-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;  
+}
+
+.orders:hover {
+    background-color: var(--purple-light-color);
+}

@@ -1,0 +1,1 @@
+export { SearchGames } from './ui';
