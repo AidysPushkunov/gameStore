@@ -8,8 +8,8 @@ const SearchGames: React.FC = () => {
   const dispatch = useDispatch();
 
   const [searchText, setSearchText] = useState('a');
-  const [gameList, setGameList] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [ , setGameList] = useState<any[]>([]);
+  const [ , setLoading] = useState(true);
 
   const handleChange = (text: string) => {
     setSearchText(text);
